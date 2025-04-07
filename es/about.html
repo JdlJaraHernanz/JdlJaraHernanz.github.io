@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+
+        <link rel="stylesheet" href="../style.css">
+        <script defer src="../app.js"></script>
+        <title>Jaime de la Jara Hernanz</title>
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar() class="item-nav">
+                    <a>
+                        <span class="material-symbols-outlined menu-option">
+                            close
+                        </span>
+                    </a>
+                </li>
+                <li class="item-nav">
+                    <h4><a href="../es/home.html">Inicio</a></h4>
+                </li>
+                <li class="item-nav">
+                    <h4><a href="../es/cv.html">CV</a></h4>
+                </li>
+                <li class="item-nav">
+                    <h4><a href="../es/contact.html">Contacto</a></h4>
+                </li>
+                <li class="item-nav select-container">
+                    <select id="lang-box" onchange="var dest = this.value; this.value = this.options[0].value; location = dest;">
+                        <option class="item-lang" value="../es/home.html">ES</option>
+                        <option class="item-lang" value="../en/home.html">EN</option>
+                        <option class="item-lang" value="../fr/home.html">FR</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li class="item-nav">
+                    <h4><a href="../es/home.html">Jaime de la Jara Hernanz</a></h4>
+                </li>
+                <li class="item-nav hide-maxwidth">
+                    <h4><a href="../es/cv.html">CV</a></h4>
+                </li>
+                <li class="item-nav hide-maxwidth">
+                    <h4><a href="../es/contact.html">Contacto</a></h4>
+                </li>
+                <li class="item-nav select-container hide-maxwidth">
+                    <select id="lang-box" onchange="var dest = this.value; this.value = this.options[0].value; location = dest;">
+                        <option class="item-lang" value="../es/home.html">ES</option>
+                        <option class="item-lang" value="../en/home.html">EN</option>
+                        <option class="item-lang" value="../fr/home.html">FR</option>
+                    </select>
+                </li>
+                <li onclick=showSidebar() class="item-nav menu-btn">
+                    <a>
+                        <span class="material-symbols-outlined menu-option">
+                            menu
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="content">
+                <div class="row">
+                    <div class="column">
+                        <div class="box">
+                            <p>Esta página web ha sido diseñada por mi cuenta, pidiendo ayuda y buscando información en foros y aprendiendo los fundamentos principales y lo más básico del diseño front-end de páginas web. No me considero un usuario avanzado en estos lenguajes de programación (especialmente en JS, apenas me apañé en hacer que funcionarán un par de funciones básicas). Como mucho, me veo más bien como un amateur, alguien que solamente le gusta jugar y trastear con su ordenador en un nivel medianamente superficial (aún si muchas cosas que llego a hacer acaban viéndose un poco ridículas). Aún así, espero que esta página web pueda mostrar las capacidades del desarrollo web (no de una forma comprensiva, puesto todo lo que es back-end es más grande aún con incluso más posibilidades) y cómo gente simple como yo puede hacerse su pequeña página web escribiendo y entendiendo el código.</p>
+                            <br>
+                            <p>Por lo tanto, si ven el código (espero que Dios - o la deidad o fe en la que crean - os salvaguarde de lo que vayáis a ver), entiendan por favor que todo esto viene de un amateur. Y si tenéis algún consejo o sugerencia sobre cómo hacer diseño web, déjadmelo saber porque siempre estoy interesado en mejorar mis habilidades en este y otros entornos.</p>
+                            <br>
+                            <p>Como una nota final, quiero dar las gracias a GitHub Pages, el servicio que estoy utilizando como host para esta página web. Verdaderamente es magnífico para todos nosotros que queremos hacernos un pequeño espacio en internet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="footer">
+                <li class="footer-list">
+                    <h4><a href="../es/about.html">Sobre la página</a></h4>
+                </li>
+                <li class="footer-list">
+                    <i>Jaime de la Jara Hernanz 2025</i>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

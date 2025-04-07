@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+
+        <link rel="stylesheet" href="../style.css">
+        <script defer src="../app.js"></script>
+        <title>Jaime de la Jara Hernanz</title>
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar() class="item-nav">
+                    <a>
+                        <span class="material-symbols-outlined menu-option">
+                            close
+                        </span>
+                    </a>
+                </li>
+                <li class="item-nav">
+                    <h4><a href="../en/home.html">Home</a></h4>
+                </li>
+                <li class="item-nav">
+                    <h4><a href="../en/cv.html">CV</a></h4>
+                </li>
+                <li class="item-nav">
+                    <h4><a href="../en/contact.html">Contact</a></h4>
+                </li>
+                <li class="item-nav select-container">
+                    <select id="lang-box" onchange="var dest = this.value; this.value = this.options[0].value; location = dest;">
+                        <option class="item-lang" value="../en/home.html"><a>EN</a></option>
+                        <option class="item-lang" value="../es/home.html"><a>ES</a></option>
+                        <option class="item-lang" value="../fr/home.html"><a>FR</a></option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li class="item-nav">
+                    <h4><a href="../en/home.html">Jaime de la Jara Hernanz</a></h4>
+                </li>
+                <li class="item-nav hide-maxwidth">
+                    <h4><a href="../en/cv.html">CV</a></h4>
+                </li>
+                <li class="item-nav hide-maxwidth">
+                    <h4><a href="../en/contact.html">Contact</a></h4>
+                </li>
+                <li class="item-nav select-container hide-maxwidth">
+                    <select id="lang-box" onchange="var dest = this.value; this.value = this.options[0].value; location = dest;"> 
+                        <option class="item-lang" value="../en/home.html"><a>EN</a></option>
+                        <option class="item-lang" value="../es/home.html"><a>ES</a></option>
+                        <option class="item-lang" value="../fr/home.html"><a>FR</a></option>
+                    </select>
+                </li>
+                <li onclick=showSidebar() class="item-nav menu-btn">
+                    <a>
+                        <span class="material-symbols-outlined menu-option">
+                            menu
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="content">
+                <div class="row hidden left begin">
+                    <div class="column welcome">
+                        <div class="box text">
+                            <h2>Hello there!</h2>
+                            <p>
+                                Welcome to my personal webpage. Here you can find my formation and experience, professional aspirations and contact information. Scroll down to discover the different sections or simply just use the navigation bar to get to the main points.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box image">
+                            <img id="profile" src="../Jjarahrnnz.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="content">
+                <div class="row hidden right">
+                    <div class="column aspirations">
+                        <div class="box">
+                            <h1>Personal statement</h1>
+                            <p>
+                                The world is now facing an unprecendented decay of institutions at all levels around the globe. The principles of economic of liberalism are now at peril due to the vanity and self-righteousness of a few while the democratic institutions that were believed to be "everlasting" start to shake before our very own eyes. Many either give up or are reluctant to listen to the warning signs that threat all of our livelihoods and our standard of living. Yet, I still that there is hope even in these bleak times when many believe that the right thing to do is just but to look for themselves.
+                            </p>
+                            <br>
+                            <p>
+                                I hope that with my work, no matter where I develop myself professionally, I can properly give hope and improve peoples' lives in a substantial way, with different proyects that address key socio-economic problems. That my work can really channel peoples' proyects to new heights. As well, I want to be a citizen civically engaged with the European proyect since it is the one that can actually construct bridges between different peoples, which is the first step towards more international integration globally. Because once we understand what we share instead of what divides us, we can drive human ingenuity further than ever before.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row hidden right">
+                    <div class="column cv">
+                        <div class="box">
+                            <h1>Formation background and capabilites</h1>
+                            <p>
+                                I have finished my undergraduate of International Relations, a line of study highly multidisciplinary which I consider to be essential when tackling problems of any nature. Combined with my own curiosity, I think of myself as a very adaptable and resourceful individual. For more information on what my abilities are, click the link below.
+                            </p>
+                            <br>
+                            <a class ="forward" id="make-black" href="../en/cv.html">
+                                <span class="material-symbols-outlined icon">
+                                    arrow_forward
+                                </span>
+                                About my formation and experience
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row hidden left">
+                    <div class="column contact">
+                        <div class="box">
+                            <h1>Get in touch</h1>
+                            <p>
+                                If you wish to contact me, there are several channels to do so, all of which can be found in the link below.
+                            </p>
+                            <br>
+                            <a class ="forward" href="../en/contact.html">
+                                <span class="material-symbols-outlined icon">
+                                    arrow_forward
+                                </span>
+                                About my contact information
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="footer">
+                <li class="footer-list">
+                    <h4><a href="../en/about.html">About the webpage</a></h4>
+                </li>
+                <li class="footer-list">
+                    <i>Jaime de la Jara Hernanz 2025</i>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+
+        <link rel="stylesheet" href="../style.css">
+        <script defer src="../app.js"></script>
+        <title>Jaime de la Jara Hernanz</title>
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar() class="item-nav">
+                    <a>
+                        <span class="material-symbols-outlined menu-option">
+                            close
+                        </span>
+                    </a>
+                </li>
+                <li class="item-nav">
+                    <h4><a href="../es/home.html">Inicio</a></h4>
+                </li>
+                <li class="item-nav">
+                    <h4><a href="../es/cv.html">CV</a></h4>
+                </li>
+                <li class="item-nav">
+                    <h4><a href="../es/contact.html">Contacto</a></h4>
+                </li>
+                <li class="item-nav select-container">
+                    <select id="lang-box" onchange="var dest = this.value; this.value = this.options[0].value; location = dest;">
+                        <option class="item-lang" value="../es/home.html">ES</option>
+                        <option class="item-lang" value="../en/home.html">EN</option>
+                        <option class="item-lang" value="../fr/home.html">FR</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li class="item-nav">
+                    <h4><a href="../es/home.html">Jaime de la Jara Hernanz</a></h4>
+                </li>
+                <li class="item-nav hide-maxwidth">
+                    <h4><a href="../es/cv.html">CV</a></h4>
+                </li>
+                <li class="item-nav hide-maxwidth">
+                    <h4><a href="../es/contact.html">Contacto</a></h4>
+                </li>
+                <li class="item-nav select-container hide-maxwidth">
+                    <select id="lang-box" onchange="var dest = this.value; this.value = this.options[0].value; location = dest;">
+                        <option class="item-lang" value="../es/home.html">ES</option>
+                        <option class="item-lang" value="../en/home.html">EN</option>
+                        <option class="item-lang" value="../fr/home.html">FR</option>
+                    </select>
+                </li>
+                <li onclick=showSidebar() class="item-nav menu-btn">
+                    <a>
+                        <span class="material-symbols-outlined menu-option">
+                            menu
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="content">
+                <div class="row hidden right">
+                    <div class="column edu">
+                        <div class="box">
+                            <h1>Formación</h1>
+                            <p>
+                                He estudiado un grado en Estudios Internacionales (International Studies) en la Universidad Carlos III de Madrid desde 2020 hasta 2025. Este grado se imparte integramente en inglés, lo cual no es muy común en este nivel de estudios en España. Por ello, he utilizado en gran medida mi primera lengua extranjera durante los cursos.
+                            </p>
+                            <p>
+                                Además, este grado ha tocado diferentes ramas de las ciencias sociales como la ciencia política, economía o derecho. Estos han sido estudiados en su componentes más globales, por ejemplo, con política comparada o derecho internacional. Aún así, mis estudios me han dado un perfil multidisplinar que me hacen capaz de poder analizar diferentes fenómenos sociales, políticos y económicos. 
+                            </p>
+                            <br>
+                            <h2>Erasmus +</h2>
+                            <p>
+                                En el año académico 2023-2024, hice un intercambio Erasmus en Aix-Marseille Université (AMU) en France donde estudié en la Facultad de Economía y Gestión (FEG). Allí tomé cursos de economía y ciencia política de la rama de estudios SSP; todos ellos impartidos en francés, mi segunda lengua extranjera.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box image formation1">
+                            <img id="uc3m" src="https://getafeactualidad.es/wp-content/uploads/2020/04/UC3M-GETAFE-UNIVERSIDAD-CAMPUS-CARLOS-III-1.jpg">
+                        </div>
+                        <div class="box image formation2">
+                            <img id="marseille" src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2151824932.jpg?c=original">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row hidden">
+                    <div class="column">
+                        <div class="marqueecont">
+                            <div class="marquee">
+                                <div class="track">
+                                    <div class="image-marquee">
+                                        <img src="../uc3m.jpeg">
+                                    </div>
+                                    <div class="image-marquee">
+                                        <img src="https://pomabbaa.webs.upv.es/wp-content/uploads/2024/06/F-MARSEIL84-Aix-Marseille-Universite_LOGO.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row hidden left">
+                    <div class="column languages">
+                        <div class="box">
+                            <h1>Idiomas</h1>
+                            <h2>Inglés - C1+</h2>
+                            <p>
+                                He estudiado inglés desde primaria, utilizándolo en gran medida durante mis estudios universitarios o cuando he viajado al extranjero. Tengo mucha facilidad para expresarme en esta lengua, hasta el punto en el que me considero como un usuario avanzado o incluso experto. Mi último certificado que tengo en inglés, IELTS, recibí una nota de 8 sobre 9; que se queda solo a medio punto de ser clasificado como un usuario experto por sus estándares.
+                            </p>
+                            <br>
+                            <h2>Francés - B2+</h2>
+                            <p>
+                                Como mi segunda idioma extranjero, no he tenido tanto tiempo como con el inglés para dominarla. Esto combinado con un comienzo difícil, no empecé a hablar con suficiente nivel hasta que no llegué a la universidad. Desde entonces, he ido asimilando y mejorando mis habilidades con el francés, obteniendo el título DELF de B2 para poder hacer mi intercambio a Francia. Actualmente estoy trabajando en obtener un certificado que demuestre que puedo ser calificado como un usuario avanzado en la lengua.
+                            </p>
+                            <br>
+                            <p>
+                                También voy a decir que yo voy a seguir aprendiendo idiomas porque quiero seguir expandiendo mis horizontes con otras lenguas, especialmente idiomas asiáticas por su complejidad. Espero que esta sección siga creciendo en el futuro...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row hidden left">
+                    <div class="column tech">
+                        <div class="box">
+                            <h1>Habilidades técnicas</h1>
+                            <p>
+                                Aparte de mis conocimientos en relaciones internacionales, también he obtenido otras habilidades técnicas considero que son valiosas. Siempre me ha gustado trabajar con ordenadores y poder divertirme, aún si alguna vez me ha dado algún dolor de cabeza. Aún así, creo que no haya mucha gente en ciencias sociales que encuentre a gusto trabajando con entornos digitales, siendo un perfil distinto que se puede acomodar y aprender de este terreno. Experimentar e intentar aprender más sobre este mundillo que a veces parece un reto pero un reto que merece la pena intentar. También estoy considerando aprender otros lenguajes de programación por mi cuenta, como Python dado que sé que es un lenguaje muy versatil y se utiliza bastante para analizar y describir datos. Entre las diferentes habilidades que he ido ganando en estos años, incluyen:
+                            </p>
+                            <br>
+                            <ul id="technical">
+                                <li>MS Office (Mainly Excel, Word and PowerPoint).</li>
+                                <li>Lenguajes de manejo de datos como R o Stata.</li>
+                                <li>Lenguajes de marcado como LaTeX</li>
+                                <li>...Y un poquito de diseño front-end de páginas web (HTML, CSS, JS)</li>
+                            </ul>
+                            <img scr="https://formacion.tirant.com/es/wp-content/uploads/2021/06/UC3M.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row hidden right">
+                    <div class="column file">
+                        <div class="box">
+                            <h1>¡También puedes descargar mi CV!</h1>
+                            <p>
+                                Puedes encontrar el archivo de mi CV haciendo click en el enlace. En este podrás ver toda la información relevante en más detalle (además de venir presentada en una forma más compacta).
+                            </p>
+                            <br>
+                            <a class ="forward" id="make-black" href="../CV_JaimedelaJaraHernanz_es_en.pdf" target="_blank">
+                                <span class="material-symbols-outlined icon">
+                                    arrow_forward
+                                </span>
+                                Descargar CV (en español e inglés)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="footer">
+                <li class="footer-list">
+                    <h4><a href="../es/about.html">Sobre la página</a></h4>
+                </li>
+                <li class="footer-list">
+                    <i>Jaime de la Jara Hernanz 2025</i>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

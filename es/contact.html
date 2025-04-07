@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+
+        <link rel="stylesheet" href="../style.css">
+        <script defer src="../app.js"></script>
+        <title>Jaime de la Jara Hernanz</title>
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar() class="item-nav">
+                    <a>
+                        <span class="material-symbols-outlined menu-option">
+                            close
+                        </span>
+                    </a>
+                </li>
+                <li class="item-nav">
+                    <h4><a href="../es/home.html">Inicio</a></h4>
+                </li>
+                <li class="item-nav">
+                    <h4><a href="../es/cv.html">CV</a></h4>
+                </li>
+                <li class="item-nav">
+                    <h4><a href="../es/contact.html">Contacto</a></h4>
+                </li>
+                <li class="item-nav select-container">
+                    <select id="lang-box" onchange="var dest = this.value; this.value = this.options[0].value; location = dest;">
+                        <option class="item-lang" value="../es/home.html">ES</option>
+                        <option class="item-lang" value="../en/home.html">EN</option>
+                        <option class="item-lang" value="../fr/home.html">FR</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li class="item-nav">
+                    <h4><a href="../es/home.html">Jaime de la Jara Hernanz</a></h4>
+                </li>
+                <li class="item-nav hide-maxwidth">
+                    <h4><a href="../es/cv.html">CV</a></h4>
+                </li>
+                <li class="item-nav hide-maxwidth">
+                    <h4><a href="../es/contact.html">Contacto</a></h4>
+                </li>
+                <li class="item-nav select-container hide-maxwidth">
+                    <select id="lang-box" onchange="var dest = this.value; this.value = this.options[0].value; location = dest;">
+                        <option class="item-lang" value="../es/home.html">ES</option>
+                        <option class="item-lang" value="../en/home.html">EN</option>
+                        <option class="item-lang" value="../fr/home.html">FR</option>
+                    </select>
+                </li>
+                <li onclick=showSidebar() class="item-nav menu-btn">
+                    <a>
+                        <span class="material-symbols-outlined menu-option">
+                            menu
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="content">
+                <div class="row hidden right">
+                    <div class="box text">
+                        <h1>Contacto</h1>
+                        <p>
+                            Aquí os dejo diferentes medios por los cuales podéis contactarme. Elegid el que preferáis, pero he de admitir que el que más utilizo personalmente es mi correo electrónico personal.
+                        </p>
+                        <br>
+                        <p>
+                            Correo personal: <a href="mailto:jaimedelajarah@gmail.com" target="_blank">jaimedelajarah@gmail.com</a>
+                        </p>
+                        <p>
+                            Perfil de LinkedIn: <a href="https://www.linkedin.com/in/jaime-de-la-jara-hernanz-81769027b/?trk=opento_sprofile_topcard" target="_blank">Jaime de la Jara Hernanz</a>
+                        </p>
+                        <br>
+                        <p>
+                            Otras plataformas en las que estoy:
+                        </p>
+                        <br>
+                        <p>
+                            Github: <a href="https://github.com/JdlJaraHernanz" target="_blank">JdlJaraHernanz</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="footer">
+                <li class="footer-list">
+                    <h4><a href="../es/about.html">Sobre la página</a></h4>
+                </li>
+                <li class="footer-list">
+                    <i>Jaime de la Jara Hernanz 2025</i>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
